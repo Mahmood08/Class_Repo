@@ -153,7 +153,7 @@ print("\n")
 print("Delete the last item from the list ")
 
 newListCopy = newList[:-1]
-print(newListCopy) 
+print(newListCopy)
 
 
 
