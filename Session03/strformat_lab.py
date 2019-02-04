@@ -51,12 +51,3 @@ print(list_1)
 
 
 
-"""width=4
-tuple= (width,)*5
-print (tuple)
-
-def make_tuple(m, n, k):
-    a = [1] * m
-    a[k] = n
-    return a
-print(make_tuple(6,6,4))"""
