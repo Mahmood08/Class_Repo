@@ -117,12 +117,11 @@ def get_donation():
         if (donation == 'quit'): 
             return donation
         
-        try: 
+        else: 
             donation = float(donation)
  
             return donation 
-        except: 
-            print("\nSorry.  '$ %s' is not a valid amount." % donation)
+        
             
               
 
