@@ -25,6 +25,13 @@ fruit_list.append("Grape")
 print(fruit_list,"\n")
 
 
+
+
+#ask user for a number and display the fruits correspond to that number
+Number = int(input('Please enter a number between 0-4:')) 
+print('Number '+ str(Number) +' corresponds to '+fruit_list[Number])
+print("\n")
+
 #Add another fruit to the first of the list and display it
 print("Add fruits to the first of list")
 list_1=["Melon"]
@@ -110,32 +117,27 @@ print('Ask the user for input like “Do you like apples?” for each fruit in t
 
 for fruit in fruit_list: 
 
-    string_fruit = input("Do you like " + fruit.lower() + "? yes/no = ")
-
-    x = True
-
-    while x is True:
+    while True:
+        
+        string_fruit = input("Do you like " + fruit.lower() + "? yes/no = ")
         
         if (string_fruit.lower() == 'yes'):
             
-            x = True 
             print(fruit_list)
             
-            break 
+            Break          
 
         elif (string_fruit.lower() == 'no'):
             
-             x= True
+            
              print(fruit)
              print("Remove it from list ")
              fruit_list.remove(fruit)   
              print("display the list\n ",fruit_list)
              break
 
-        else:
-            
-            x= False
-            print("Please enter yes or no\n") 
+        else:        
+            print("Please enter yes or no:\n") 
      
 
 
