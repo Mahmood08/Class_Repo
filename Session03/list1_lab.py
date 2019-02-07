@@ -162,7 +162,7 @@ print("Delete the last item from the list ")
 
 new_list_copy = new_list[:-1]
 print(new_list_copy) 
-
+print("\n")
 
 
 
