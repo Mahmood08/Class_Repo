@@ -2,7 +2,7 @@
 
 
 
-#Display all of the contents of the list
+
 
 print("--------SERIES-1---------")
 
