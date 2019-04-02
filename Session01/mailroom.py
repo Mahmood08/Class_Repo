@@ -61,11 +61,7 @@ def get_donation():
             return donation
         except ValueError:
              print("\nError.It is not valid amount.")
-def print_donor_list():
-    print("\nDonor Names:")
-    print("-" *15)
-    print(donor_list())
-    
+
 def send_thank_you_letter(name, donation_amount):
     """ Create a thank you message """
     message = f"{name},Thank you for your most recent donation of ${DONORS_NAME[name][1]}."
