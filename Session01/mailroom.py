@@ -66,3 +66,7 @@ def send_thank_you_letter(name, donation_amount):
     """ Create a thank you message """
     message = f"{name},Thank you for your most recent donation of ${DONORS_NAME[name][1]}."
     return message
+
+def file_name(name):
+    'Return a txt file name based on the donor name and using underscores instead of spaces'
+    return name.replace(' ', '_') + '.txt'     
