@@ -43,10 +43,9 @@ def create_report():
 
     print("\n\n\n")
 
+
 def donor_list():
     """ Updated by Comprehensions"""
     
     name_list = [name for name in DONORS_NAME]    
-    return '\n'.join(name_list)       
-
-
+    return '\n'.join(name_list)   
