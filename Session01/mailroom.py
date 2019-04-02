@@ -61,5 +61,8 @@ def get_donation():
             return donation
         except ValueError:
              print("\nError.It is not valid amount.")
-
-             
+def print_donor_list():
+    print("\nDonor Names:")
+    print("-" *15)
+    print(donor_list())
+  
