@@ -48,4 +48,9 @@ def donor_list():
     """ Updated by Comprehensions"""
     
     name_list = [name for name in DONORS_NAME]    
-    return '\n'.join(name_list)   
+    return '\n'.join(name_list)
+
+def print_donor_list():
+    print("\nDonor Names:")
+    print("-" *15)
+    print(donor_list())
