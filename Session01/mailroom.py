@@ -50,7 +50,16 @@ def donor_list():
     name_list = [name for name in DONORS_NAME]    
     return '\n'.join(name_list)
 
-def print_donor_list():
-    print("\nDonor Names:")
-    print("-" *15)
-    print(donor_list())
+def get_donation():
+    """ updated this function using Error handling.
+        It gets donation from the donor"""
+    while True:       
+        donation = input("\nPlease Enter a Valid Amount.""\n$")
+                               
+        try:
+            donation = float(donation)
+            return donation
+        except ValueError:
+             print("\nError.It is not valid amount.")
+
+             
