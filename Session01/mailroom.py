@@ -69,4 +69,12 @@ def send_thank_you_letter(name, donation_amount):
 
 def file_name(name):
     'Return a txt file name based on the donor name and using underscores instead of spaces'
-    return name.replace(' ', '_') + '.txt'     
+    return name.replace(' ', '_') + '.txt'
+
+def send_letter_for_all():
+    """ Send a thank you message to all donors"""
+    print("***\nloading letters for all donors\n***")
+    for name in list(DONORS_NAME.keys()):
+        amount = DONORS_NAME[name][0] * DONORS_NAME[name][1]
+        message = send_thank_you_letter(name, amount) 
+        save_letter_disk(message, name, str(amount))
