@@ -29,7 +29,7 @@ Donors = {'william gates':[3, 3000.45],
 
 def Create_report(): 
 
-    """Create a detailed report of donors and their history of the amounts they have donated"""
+    """Create a report of donors and their history of the amounts they have donated"""
     
     donor_report = []
     for name in Donors: 
