@@ -4,7 +4,7 @@
 
 
 
-print("--------SERIES-1---------")
+print("--------seriesSERIES-1---------")
 
 print("\nDisplay fruit list")
 
